@@ -171,10 +171,6 @@
 								<div class="chart js-counter" data-from="0" data-to="80" data-speed="2500" data-refresh-interval="50"></div>
 							</div>
 							<div class="col-md-3 col-md-offset-2 subtext to-animate">
-								<span><strong>WordPress</strong></span>
-								<div class="chart js-counter" data-from="0" data-to="75" data-speed="2500" data-refresh-interval="50"></div>
-							</div>
-							<div class="col-md-3 col-md-offset-2 subtext to-animate">
 								<span><strong>Node.js</strong></span>
 								<div class="chart js-counter" data-from="0" data-to="70" data-speed="2500" data-refresh-interval="50"></div>
 							</div>
@@ -199,7 +195,7 @@
 				<div class="col-md-4 to-animate">
 					<h3 class="section-title">Cooperate with Me</h3>
 					<span>Let's work together to be more better than before</span>
-					<p class="copy-right">&copy; 2021 Dhi1ka Projects. <br> All Rights Reserved.</p>
+					<p class="copy-right">Copyright &copy; <span id="year"></span> <strong>Dhi1ka</strong>. All Rights Reserved.</p>
 				</div>
 				<div class="col-md-4 to-animate">
 					<h3 class="section-title">Address</h3>
@@ -250,5 +246,9 @@
 	<script src="js/jquery.countTo.js"></script>
 	<script src="js/modernizr-2.6.2.min.js"></script>
 	<script src="js/main.js"></script>
+	<script>
+		let date = new Date().getFullYear();
+		$('#year').append(date);
+	</script>
 </body>
 </html>
